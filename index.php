@@ -36,6 +36,9 @@ if ($text != "") {
     echo "qrcode.makeCode('{$text}')</script>";
     if ($tag != "") {
         echo "<p align='center' style='font-size: 1em'>{$tag}</p>";
+    } else {
+        echo "<p align='center' style='font-size: 1em'>使用及部署: <a href='http://github.com/LucienShui/QRCodeOnline' target='_blank'><b>GitHub</b></a></p>";
+        echo "<p align='center' style='font-size: 1em'>&copy; 2018 版权所有 <a href='http://www.lucien.ink' target='_blank'>Lucien Shui</a></p>";
     }
 } else {
     echo "qrcode.makeCode('http://www.lucien.ink')</script>";
